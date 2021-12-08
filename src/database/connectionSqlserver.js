@@ -4,20 +4,19 @@ const dbSettings = {
   user: config.sqlserver.user,
   password: config.sqlserver.password,
   server: config.sqlserver.server,
-  database: config.sqlserver.database,
+  database: config.sqlserver.db,
   options: {
     encrypt: config.sqlserver.options.encrypt,
     trustServerCertificate: config.sqlserver.options.trustServerCertificate
   }
 }
 
-const getConnection = async () => {
-   try {
-      const pool = await sql.connect(dbSettings)
-      return pool
-   } catch (error) {
-      console.log(error)
-   }
+export const getConnection = async () => {
+  try {
+    console.log('dbsettings:', dbSettings)
+    const pool = await sql.connect(dbSettings)
+    return pool
+  } catch (error) {
+    console.log(error)
+  }
 }
-
-getConnection()

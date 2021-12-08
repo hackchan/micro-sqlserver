@@ -7,7 +7,7 @@ export const config = {
     user: process.env.SQLSERVER_USER,
     password: process.env.SQLSERVER_PASS,
     server: process.env.SQLSERVER_SERVER,
-    database: process.env.SQLSERVER_DB,
+    db: process.env.SQLSERVER_DB,
     options: {
       encrypt: process.env.SERVER_DB_ENCRYPT === true,
       trustServerCertificate:

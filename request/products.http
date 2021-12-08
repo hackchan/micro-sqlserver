@@ -1,0 +1,11 @@
+@api = http://localhost:5000/products
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+  "name":"Nintendo switch",
+  "description":"consola de videojuegos"
+}
