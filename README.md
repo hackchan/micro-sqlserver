@@ -10,12 +10,16 @@ y expone un api rest para ejecutar query, procedures o funciones y extraer del p
 instalacion de Nodejs en linux lo hacemos a traves de Node Version Manager
 
 ```
+#install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 #despues de la instalacion ejecutamos
 ~/.bashrc
 
+#listamos las versiones de Nodejs disponibles
 nvm list-remote
+
+#Instalamos la ultima version con LTS
 nvm install v16.13.1
 ```
 
@@ -25,32 +29,40 @@ nvm install v16.13.1
 
 Proporciona mecanismos para: Escritura de manejadores de peticiones con diferentes verbos HTTP en diferentes caminos URL (rutas).
 
+```
+npm i express
+```
+
 # mssql:
 
 cliente de Microsoft SQL Server para Nodejs
+
+```
+npm i mssql
+```
 
 # Morgan:
 
 middleware de registro de solicitudes HTTP para Node.js. Simplifica el proceso de registro de solicitudes en su aplicación.
 
+```
+npm i morgan
+```
+
 # Dotenv
 
 Una forma muy eficiente de manejar tus variables de entorno es usando una herramienta externa dotenv
+
+```
+npm i dotenv
+```
 
 # Cors
 
 CORS significa Cross-Origin Resource Sharing, y es una política a nivel de navegador web que se aplica para prevenir que el dominio A evite acceder a recursos del dominio B usando solicitudes del tipo AJAX como cuando usamos fetch() o XMLHttpRequest.
 
 ```
-npm i express mssql morgan dotenv cors
-```
-
-# Dev dependicies
-
-```bash
-npm i @babel/cli @babel/core @babel/node @babel/preset-env nodemon
-eslint eslint-config-prettier eslint-plugin-prettier prettier -D
-
+npm i cors
 ```
 
 ## Despliegue 📦
