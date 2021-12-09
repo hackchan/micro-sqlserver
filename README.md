@@ -65,6 +65,14 @@ CORS significa Cross-Origin Resource Sharing, y es una política a nivel de nave
 npm i cors
 ```
 
+# @hapi/boom
+
+boom es parte del ecosistema hapi y fue diseñado para funcionar a la perfección con el marco web hapi y sus otros componentes (pero funciona muy bien por sí solo o con otros marcos).
+
+```
+npm i @hapi/boom
+```
+
 ## Despliegue 📦
 
 Para descargar el proyecto a su computadora y ejecutar, clone el proyecto, instale las dependencias y correr el proyecto con el comando npm run dev.
@@ -73,7 +81,13 @@ Para descargar el proyecto a su computadora y ejecutar, clone el proyecto, insta
 git clone git@github.com:hackchan/micro-sqlserver.git
 cd micro-sqlserver
 npm install
+
+#desarrollo
 npm run dev
+
+#produccion
+npm run build
+npm run start
 ```
 
 ## Construido con 🛠️

@@ -1,11 +1,21 @@
 @api = http://localhost:5000/products
 GET {{api}}
+Content-Type: application/json
 
+{
+ "db":"appstore",
+ "table":"Products"
+}
 ###
 POST {{api}}
 Content-Type: application/json
 
 {
-  "name":"Nintendo switch",
-  "description":"consola de videojuegos"
+  "db":"webstore",
+  "table":"Products",
+  "data":{
+  "name":"Play station 4",
+  "description":"consola de videojuegos",
+  "quantity":25
+  }
 }

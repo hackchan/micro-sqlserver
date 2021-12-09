@@ -1,7 +1,7 @@
 import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
-import { config } from '../config'
+import { config } from './config'
 import routers from './routers/router'
 import { wrapError, errorResponse } from './utils/middlewares/error'
 const app = express()

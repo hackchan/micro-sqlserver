@@ -1,5 +1,5 @@
 import sql from 'mssql'
-import { config } from '../../config'
+import { config } from '../config'
 const dbSettings = {
   user: config.sqlserver.user,
   password: config.sqlserver.password,
@@ -13,10 +13,11 @@ const dbSettings = {
 
 export const getConnection = async () => {
   try {
-    console.log('dbsettings:', dbSettings)
     const pool = await sql.connect(dbSettings)
     return pool
   } catch (error) {
     console.log(error)
   }
 }
+
+export { sql }
