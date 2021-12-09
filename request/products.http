@@ -14,8 +14,17 @@ Content-Type: application/json
   "db":"webstore",
   "table":"Products",
   "data":{
-  "name":"Play station 4",
+  "name":"Play station 1",
   "description":"consola de videojuegos",
-  "quantity":25
+  "quantity":20
   }
+}
+
+### ExecSQL
+
+GET {{api}}/sql
+Content-Type: application/json
+
+{
+ "sql":"SELECT * FROM [webstore].[dbo].[products] WHERE id =3 and quantity=10"
 }
