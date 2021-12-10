@@ -4,7 +4,7 @@ import productsRoute from '../api/components/products/router'
 const routers = (app) => {
   const router = Router()
   app.use('/', router)
-  router.use('/products', productsRoute)
+  router.use('/', productsRoute)
 }
 
 export default routers

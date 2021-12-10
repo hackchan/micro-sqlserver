@@ -1,4 +1,4 @@
-@api = http://localhost:5000/products
+@api = http://localhost:5000
 GET {{api}}
 Content-Type: application/json
 

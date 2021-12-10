@@ -1,5 +1,6 @@
 import sql from 'mssql'
 import { config } from '../config'
+
 const dbSettings = {
   user: config.sqlserver.user,
   password: config.sqlserver.password,
@@ -7,7 +8,8 @@ const dbSettings = {
   database: config.sqlserver.db,
   options: {
     encrypt: config.sqlserver.options.encrypt,
-    trustServerCertificate: config.sqlserver.options.trustServerCertificate
+    trustServerCertificate:
+      config.sqlserver.options.trustServerCertificate
   }
 }
 
